@@ -56,7 +56,7 @@ export default {
           new Italic(),
           new History(),
           new Collaboration({
-            socketServerBaseURL: 'http://localhost:6002',
+            socketServerBaseURL: 'http://localhost:5001',
             namespace: this.namespace,
             room: this.room,
             clientID: String(Math.floor(Math.random() * 0xFFFFFFFF)),
@@ -106,7 +106,7 @@ export default {
     makeClientColorStyles() {
       let clientsColorsStyle = document.getElementById('client-colors')
       if (clientsColorsStyle) clientsColorsStyle.remove()
-      
+
       clientsColorsStyle = document.createElement('style')
       clientsColorsStyle.type = 'text/css'
       clientsColorsStyle.id = 'client-colors'
