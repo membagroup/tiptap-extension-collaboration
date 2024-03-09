@@ -1,6 +1,7 @@
 /* eslint-disable class-methods-use-this */
-import { Extension, Plugin } from 'tiptap';
+import { Extension } from '@tiptap/core';
 import { Decoration, DecorationSet } from 'prosemirror-view';
+import { Plugin } from '@tiptap/pm/state';
 
 export default class Cursors extends Extension {
   get name() {
